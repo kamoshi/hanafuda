@@ -43,6 +43,47 @@ export class HfApp extends LitElement {
       display: flex;
       width: 100%;
       height: 100%;
+
+      --hf-card-width: 40px;
+      --hf-card-height: calc(var(--hf-card-width) * 1600 / 976);
+      --hf-left-width: 80px;
+      --hf-right-width: 140px;
+    }
+
+    @media (min-width: 768px) {
+      :host {
+        --hf-card-width: 52px;
+        --hf-card-height: calc(var(--hf-card-width) * 1600 / 976);
+        --hf-left-width: 96px;
+        --hf-right-width: 170px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      :host {
+        --hf-card-width: 60px;
+        --hf-card-height: calc(var(--hf-card-width) * 1600 / 976);
+        --hf-left-width: 110px;
+        --hf-right-width: 200px;
+      }
+    }
+
+    @media (min-width: 1280px) {
+      :host {
+        --hf-card-width: 70px;
+        --hf-card-height: calc(var(--hf-card-width) * 1600 / 976);
+        --hf-left-width: 120px;
+        --hf-right-width: 230px;
+      }
+    }
+
+    @media (min-width: 1536px) {
+      :host {
+        --hf-card-width: 80px;
+        --hf-card-height: calc(var(--hf-card-width) * 1600 / 976);
+        --hf-left-width: 130px;
+        --hf-right-width: 260px;
+      }
     }
 
     hf-launcher,
