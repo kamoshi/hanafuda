@@ -51,8 +51,9 @@ res/
 
 ## License
 
-SVG card artwork from [Wikimedia Commons][wikimedia-cards]. Created by Louie Mantia, すけじょ.
-Licensed under [CC BY-SA 4.0][cc-by-sa].
+- SVG card artwork from [Wikimedia Commons][wikimedia-cards]. Created by Louie
+  Mantia, すけじょ. Licensed under [CC BY-SA 4.0][cc-by-sa].
+- Source code under MIT
 
 [Lit]: https://lit.dev
 [Vite]: https://vitejs.dev
