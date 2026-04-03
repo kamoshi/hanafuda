@@ -17,7 +17,7 @@ application originally written in my first year of university.
 deno install
 deno task dev       # dev server at http://localhost:5173
 deno task build     # production build → dist/
-deno test          # run tests
+deno task test      # run tests
 ```
 
 ## Embedding
