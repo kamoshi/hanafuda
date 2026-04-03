@@ -1,0 +1,20 @@
+# Ignore everything by default
+*
+
+!.gitignore
+
+!README.md
+!LICENSE
+
+# Allow project files
+!index.html
+!package.json
+!deno.lock
+!tsconfig.json
+!vite.config.ts
+
+# Allow source and assets (directories must be unignored before their contents)
+!src/
+!src/**
+!res/
+!res/**

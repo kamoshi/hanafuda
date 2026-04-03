@@ -1,0 +1,77 @@
+/*
+ * global.css — responsive layout variables replacing Resolution.java enum.
+ *
+ * CSS custom properties are set on :root so they inherit across shadow DOM
+ * boundaries into every Lit component that uses them.
+ *
+ * Variables:
+ *   --hf-card-width / --hf-card-height  — main card size (hand + table + pile)
+ *   --hf-left-width                     — left panel (pile + feedback messages)
+ *   --hf-right-width                    — right panel (player info + collected)
+ */
+
+/* ── Base reset ──────────────────────────────────────────────────────────── */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    background: #f5f0e8;
+}
+
+/* ── Layout variables — small (< 768 px) ─────────────────────────────────── */
+:root {
+    --hf-card-width: 40px;
+    --hf-card-height: calc(var(--hf-card-width) * 1600 / 976);
+    --hf-left-width: 80px;
+    --hf-right-width: 140px;
+}
+
+/* ── 768 px ───────────────────────────────────────────────────────────────── */
+@media (min-width: 768px) {
+    :root {
+        --hf-card-width: 52px;
+        --hf-card-height: calc(var(--hf-card-width) * 1600 / 976);
+        --hf-left-width: 96px;
+        --hf-right-width: 170px;
+    }
+}
+
+/* ── 1024 px ──────────────────────────────────────────────────────────────── */
+@media (min-width: 1024px) {
+    :root {
+        --hf-card-width: 60px;
+        --hf-card-height: calc(var(--hf-card-width) * 1600 / 976);
+        --hf-left-width: 110px;
+        --hf-right-width: 200px;
+    }
+}
+
+/* ── 1280 px ──────────────────────────────────────────────────────────────── */
+@media (min-width: 1280px) {
+    :root {
+        --hf-card-width: 70px;
+        --hf-card-height: calc(var(--hf-card-width) * 1600 / 976);
+        --hf-left-width: 120px;
+        --hf-right-width: 230px;
+    }
+}
+
+/* ── 1536 px ──────────────────────────────────────────────────────────────── */
+@media (min-width: 1536px) {
+    :root {
+        --hf-card-width: 80px;
+        --hf-card-height: calc(var(--hf-card-width) * 1600 / 976);
+        --hf-left-width: 130px;
+        --hf-right-width: 260px;
+    }
+}
